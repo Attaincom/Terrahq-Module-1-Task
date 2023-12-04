@@ -41,7 +41,7 @@
 </head>
 <body>
 
-    <form id="myForm">
+    <form id="Form">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name">
 
@@ -67,7 +67,7 @@
     </form>
 
     <script>
-        document.getElementById('myForm').addEventListener('submit', function(event) {
+        document.getElementById('Form').addEventListener('submit', function(event) {
             var name = document.getElementById('name').value;
             var email = document.getElementById('email').value;
             var phone = document.getElementById('phone').value;
@@ -93,7 +93,7 @@
         });
 
         function isValidEmail(email) {
-            // Basic email validation using a regular expression
+        
             var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             return emailRegex.test(email);
         }
